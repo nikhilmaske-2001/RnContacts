@@ -5,21 +5,15 @@
  * @format
  * @flow strict-local
  */
-
+import 'react-native-gesture-handler';
 import React from 'react';
 import type { Node } from 'react';
-import {
-  SafeAreaView,
-  Text,
-} from 'react-native';
+
+import AppNavContainer from './src/navigations';
 
 
 const App: () => Node = () => {
-  return (
-    <SafeAreaView>
-      <Text>Hello world!</Text>
-    </SafeAreaView >
-  );
+  return <AppNavContainer />
 };
 
 export default App;
