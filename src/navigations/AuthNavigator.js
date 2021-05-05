@@ -4,9 +4,9 @@ import { Text, View } from 'react-native';
 
 const Login = () => {
     return (
-        <Viewiew>
+        <View>
             <Text>Hi, I am from Contacts</Text>
-        </View >
+        </View>
     );
 }
 
@@ -14,13 +14,13 @@ const SignUp = () => {
     return (
         <View>
             <Text>Hi, I am from ContactDetail</Text>
-        </View >
+        </View>
     );
 }
 
 
 const AuthNavigator = () => {
-    const HomeStack = createStackNavigator();
+    const AuthStack = createStackNavigator();
     return (
         <AuthStack.Navigator>
             <AuthStack.Screen name="Login" component={Login}></AuthStack.Screen>
